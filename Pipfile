@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+tvcontrolcli = "python -m tvControlCLI.main"
+
+[packages]
+cement = "==3.0.4"
+colorlog = "*"
+Jinja2 = "*"
+PyYAML = "*"
+pytest = "*"
+pytest-cov = "*"
+coverage = "*"
+twine = ">=1.11.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
