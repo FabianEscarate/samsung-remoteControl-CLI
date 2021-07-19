@@ -17,7 +17,7 @@ class Base(Controller):
         description = "Remote Control for samsung tv's"
 
         # text displayed at the bottom of --help output
-        epilog = 'Usage: samsung-remotecontrol-cli command1 --foo bar'
+        epilog = 'Usage: tvremotecli connect --ip xxx.xxx.xxx.xxx'
 
         # controller level arguments. ex: 'samsung-remotecontrol-cli --version'
         arguments = [
@@ -35,15 +35,15 @@ class Base(Controller):
 
 
     @ex(
-        help='example sub command1',
+        help='connection for tv',
 
         # sub-command level arguments. ex: 'samsung-remotecontrol-cli command1 --foo bar'
         arguments=[
             ### add a sample foo option under subcommand namespace
-            ( [ '-f', '--foo' ],
-              { 'help' : 'notorious foo option',
+            ( [ '--ip' ],
+              { 'help' : 'Tv ip',
                 'action'  : 'store',
-                'dest' : 'foo' } ),
+                'dest' : 'ip' } ),
         ],
     )
     def command1(self):

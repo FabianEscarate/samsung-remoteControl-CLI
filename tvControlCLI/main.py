@@ -6,7 +6,7 @@ from .controllers.base import Base
 
 # configuration defaults
 CONFIG = init_defaults('samsung-remotecontrol-cli')
-CONFIG['samsung-remotecontrol-cli']['foo'] = 'bar'
+CONFIG['samsung-remotecontrol-cli']['ip'] = 'xxx.xxx.xxx.xxx'
 
 
 class remmoteControl(App):
