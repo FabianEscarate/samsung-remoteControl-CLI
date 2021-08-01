@@ -9,7 +9,7 @@ LONG_DESCRIPTION = f.read()
 f.close()
 
 setup(
-    name='tvControlCLI',
+    name='tvcli',
     version=VERSION,
     description='MyApp Does Amazing Things!',
     long_description=LONG_DESCRIPTION,
@@ -19,10 +19,10 @@ setup(
     url='https://github.com/johndoe/myapp/',
     license='unlicensed',
     packages=find_packages(exclude=['ez_setup', 'tests*']),
-    package_data={'tvControlCLI': ['templates/*']},
+    package_data={'tvcli': ['templates/*']},
     include_package_data=True,
     entry_points="""
         [console_scripts]
-        tvControlCLI = tvControlCLI.main:main
+        tvcli = tvcli.main:main
     """,
 )
