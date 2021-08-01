@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [scripts]
-tvcontrolcli = "python -m tvControlCLI.main"
+tvcli = "python -m tvcli.main"
 
 [packages]
 cement = "==3.0.4"
@@ -15,6 +15,7 @@ pytest = "*"
 pytest-cov = "*"
 coverage = "*"
 twine = ">=1.11.0"
+tinydb = "*"
 
 [dev-packages]
 
